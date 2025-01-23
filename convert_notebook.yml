@@ -1,0 +1,55 @@
+---
+- name: Setup and Convert Jupyter Notebook to Python Script
+  hosts: localhost
+  become: true
+
+  vars:
+    notebook_file: "maketradedec.ipynb"  # Replace with your notebook name
+    target_directory: "/home/developer/DBA/bin"
+    source_directory: "/home/developer/projects/myML"  # Directory where the notebook is located
+
+  tasks:
+    - name: Install system dependencies
+      dnf:
+        name:
+          - python3
+          - python3-pip
+        state: present
+
+    - name: Install Jupyter and nbconvert via pip
+      pip:
+        name:
+          - notebook
+        executable: /usr/bin/pip3
+
+    - name: Ensure target directory exists
+      file:
+        path: "{{ target_directory }}"
+        state: directory
+        owner: developer
+        group: developer
+        mode: '0755'
+
+    - name: Convert Jupyter notebook to Python script
+      command:
+        cmd: "jupyter nbconvert --to script {{ notebook_file }}"
+        chdir: "{{ source_directory }}"
+      args:
+        creates: "{{ source_directory }}/{{ notebook_file | basename | regex_replace('\\.ipynb$', '.py') }}"
+
+    - name: Move the converted Python script to the target directory
+      copy:
+        src: "{{ source_directory }}/{{ notebook_file | basename | regex_replace('\\.ipynb$', '.py') }}"
+        dest: "{{ target_directory }}/"
+        owner: developer
+        group: developer
+        mode: '0755'
+
+    - name: Verify the script in the target directory
+      stat:
+        path: "{{ target_directory }}/{{ notebook_file | basename | regex_replace('\\.ipynb$', '.py') }}"
+      register: script_status
+
+    - name: Output the result
+      debug:
+        msg: "Converted script is located at {{ script_status.stat.path }}"
