@@ -1,0 +1,25 @@
+- name: Dynamically allocate CPU & RAM for VirtualBox VM
+  hosts: localhost
+  gather_facts: no
+  tasks:
+
+    - name: Get CPU & RAM usage from the VM
+      command: ssh user@vm_ip "python3 -c 'import psutil; print(psutil.cpu_percent(), psutil.virtual_memory().percent)'"
+      register: usage_output
+      changed_when: false
+
+    - name: Parse CPU & RAM usage
+      set_fact:
+        cpu_usage: "{{ usage_output.stdout.split()[0] | float }}"
+        ram_usage: "{{ usage_output.stdout.split()[1] | float }}"
+
+    - name: Increase CPU allocation if usage exceeds 80%
+      command: VBoxManage modifyvm "VM_NAME" --cpus 4
+      when: cpu_usage > 80
+
+    - name: Increase RAM allocation if usage exceeds 80%
+      command: VBoxManage modifyvm "VM_NAME" --memory 8192
+      when: ram_usage > 80
+
+    - name: Restart VirtualBox VM to apply changes
+      command: VBoxManage startvm "VM_NAME" --type headless

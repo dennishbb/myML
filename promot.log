@@ -1,0 +1,6 @@
+2025-02-14 22:15:11,428 - INFO - Starting VM scaling script...
+2025-02-14 22:15:11,537 - INFO - VM 100 CPU Usage: 0.39%
+2025-02-14 22:15:11,540 - INFO - VM 100 CPU is normal.
+2025-02-14 22:15:11,546 - INFO - VM 101 CPU Usage: 0.10%
+2025-02-14 22:15:11,549 - INFO - VM 101 CPU is normal.
+2025-02-14 22:15:11,549 - INFO - Scaling check complete.
