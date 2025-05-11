@@ -4,3 +4,184 @@
 2025-02-14 22:15:11,546 - INFO - VM 101 CPU Usage: 0.10%
 2025-02-14 22:15:11,549 - INFO - VM 101 CPU is normal.
 2025-02-14 22:15:11,549 - INFO - Scaling check complete.
+2025-02-15 08:18:06,816 - INFO - Starting VM scaling script...
+2025-02-15 08:18:06,900 - INFO - VM 100 CPU Usage: 0.36%
+2025-02-15 08:18:06,900 - INFO - VM 100 CPU is normal.
+2025-02-15 08:18:06,904 - INFO - VM 101 CPU Usage: 0.07%
+2025-02-15 08:18:06,905 - INFO - VM 101 CPU is normal.
+2025-02-15 08:18:06,905 - INFO - Scaling check complete.
+2025-02-15 09:14:58,209 - INFO - Starting VM scaling script...
+2025-02-15 09:14:58,293 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 09:14:58,294 - INFO - VM 100 CPU is normal.
+2025-02-15 09:14:58,298 - INFO - VM 101 CPU Usage: 0.08%
+2025-02-15 09:14:58,299 - INFO - VM 101 CPU is normal.
+2025-02-15 09:14:58,300 - INFO - Scaling check complete.
+2025-02-15 09:41:34,652 - INFO - Starting VM scaling script...
+2025-02-15 09:41:34,756 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 09:41:34,757 - INFO - VM 100 CPU is normal.
+2025-02-15 09:41:34,760 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 09:41:34,761 - INFO - VM 101 CPU is normal.
+2025-02-15 09:41:34,762 - INFO - Scaling check complete.
+2025-02-15 09:42:15,387 - INFO - Starting VM scaling script...
+2025-02-15 09:42:15,486 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 09:42:15,487 - INFO - VM 100 CPU is normal.
+2025-02-15 09:42:15,491 - INFO - VM 101 CPU Usage: -0.29%
+2025-02-15 09:42:15,492 - INFO - VM 101 CPU is normal.
+2025-02-15 09:42:15,493 - INFO - Scaling check complete.
+2025-02-15 09:42:57,604 - INFO - Starting VM scaling script...
+2025-02-15 09:42:57,690 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 09:42:57,690 - INFO - VM 100 CPU is normal.
+2025-02-15 09:42:57,696 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 09:42:57,697 - INFO - VM 101 CPU is normal.
+2025-02-15 09:42:57,697 - INFO - Scaling check complete.
+2025-02-15 09:45:52,932 - INFO - Starting VM scaling script...
+2025-02-15 09:45:53,014 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 09:45:53,015 - INFO - VM 100 CPU is normal.
+2025-02-15 09:45:53,020 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 09:45:53,021 - INFO - VM 101 CPU is normal.
+2025-02-15 09:45:53,021 - INFO - Scaling check complete.
+2025-02-15 09:46:59,852 - INFO - Starting VM scaling script...
+2025-02-15 09:46:59,936 - INFO - VM 100 CPU Usage: 0.35%
+2025-02-15 09:46:59,937 - INFO - VM 100 CPU is normal.
+2025-02-15 09:46:59,941 - INFO - VM 101 CPU Usage: 0.24%
+2025-02-15 09:46:59,942 - INFO - VM 101 CPU is normal.
+2025-02-15 09:46:59,943 - INFO - Scaling check complete.
+2025-02-15 09:47:54,467 - INFO - Starting VM scaling script...
+2025-02-15 09:47:54,600 - INFO - VM 100 CPU Usage: 0.32%
+2025-02-15 09:47:54,601 - INFO - VM 100 CPU is normal.
+2025-02-15 09:47:54,612 - INFO - VM 101 CPU Usage: 0.06%
+2025-02-15 09:47:54,613 - INFO - VM 101 CPU is normal.
+2025-02-15 09:47:54,614 - INFO - Scaling check complete.
+2025-02-15 09:48:24,796 - INFO - Starting VM scaling script...
+2025-02-15 09:48:24,943 - INFO - VM 100 CPU Usage: -0.03%
+2025-02-15 09:48:24,945 - INFO - VM 100 CPU is normal.
+2025-02-15 09:48:24,960 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 09:48:24,961 - INFO - VM 101 CPU is normal.
+2025-02-15 09:48:24,963 - INFO - Scaling check complete.
+2025-02-15 10:42:41,396 - INFO - Starting VM scaling script...
+2025-02-15 10:42:43,959 - ERROR - Failed to fetch CPU usage for VM 192.168.0.95: HTTPConnectionPool(host='192.168.0.34', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.95%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1064c08f10>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-02-15 10:42:43,961 - ERROR - Failed to fetch CPU usage for VM 100
+2025-02-15 10:42:47,032 - ERROR - Failed to fetch CPU usage for VM 192.168.0.96: HTTPConnectionPool(host='192.168.0.34', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.96%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1064c37c50>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-02-15 10:42:47,034 - ERROR - Failed to fetch CPU usage for VM 101
+2025-02-15 10:42:47,035 - INFO - Scaling check complete.
+2025-02-15 10:42:57,603 - INFO - Starting VM scaling script...
+2025-02-15 10:42:59,319 - ERROR - Failed to fetch CPU usage for VM 192.168.0.95: HTTPConnectionPool(host='192.168.0.34', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.95%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f107c776310>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-02-15 10:42:59,320 - ERROR - Failed to fetch CPU usage for VM 100
+2025-02-15 10:43:02,391 - ERROR - Failed to fetch CPU usage for VM 192.168.0.96: HTTPConnectionPool(host='192.168.0.34', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.96%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f107d64d9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-02-15 10:43:02,393 - ERROR - Failed to fetch CPU usage for VM 101
+2025-02-15 10:43:02,396 - INFO - Scaling check complete.
+2025-02-15 12:45:49,275 - INFO - Starting VM scaling script...
+2025-02-15 12:45:50,542 - INFO - VM 100 CPU Usage: -1.21%
+2025-02-15 12:45:50,543 - INFO - VM 100 CPU is normal.
+2025-02-15 12:45:50,549 - INFO - VM 101 CPU Usage: -1.56%
+2025-02-15 12:45:50,550 - INFO - VM 101 CPU is normal.
+2025-02-15 12:45:50,551 - INFO - Scaling check complete.
+2025-02-15 12:50:01,884 - INFO - Starting VM scaling script...
+2025-02-15 12:50:01,961 - INFO - VM 100 CPU Usage: 0.35%
+2025-02-15 12:50:01,962 - INFO - VM 100 CPU is normal.
+2025-02-15 12:50:01,966 - INFO - VM 101 CPU Usage: 0.06%
+2025-02-15 12:50:01,967 - INFO - VM 101 CPU is normal.
+2025-02-15 12:50:01,967 - INFO - Scaling check complete.
+2025-02-15 12:51:00,632 - INFO - Starting VM scaling script...
+2025-02-15 12:51:00,707 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 12:51:00,708 - INFO - VM 100 CPU is normal.
+2025-02-15 12:51:00,712 - INFO - VM 101 CPU Usage: 0.06%
+2025-02-15 12:51:00,713 - INFO - VM 101 CPU is normal.
+2025-02-15 12:51:00,714 - INFO - Scaling check complete.
+2025-02-15 12:59:42,298 - INFO - Starting VM scaling script...
+2025-02-15 12:59:42,370 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 12:59:42,371 - INFO - VM 100 CPU is normal.
+2025-02-15 12:59:42,376 - INFO - VM 101 CPU Usage: 0.07%
+2025-02-15 12:59:42,376 - INFO - VM 101 CPU is normal.
+2025-02-15 12:59:42,378 - INFO - Scaling check complete.
+2025-02-15 13:26:09,666 - INFO - Starting VM scaling script...
+2025-02-15 13:26:09,764 - WARNING - No data returned for VM 192.168.0.95.
+2025-02-15 13:26:09,765 - ERROR - Failed to fetch CPU usage for VM 100
+2025-02-15 13:26:09,770 - WARNING - No data returned for VM 192.168.0.96.
+2025-02-15 13:26:09,771 - ERROR - Failed to fetch CPU usage for VM 101
+2025-02-15 13:26:09,772 - INFO - Scaling check complete.
+2025-02-15 13:27:17,672 - INFO - Starting VM scaling script...
+2025-02-15 13:27:17,961 - INFO - VM 100 CPU Usage: 0.39%
+2025-02-15 13:27:17,963 - INFO - VM 100 CPU is normal.
+2025-02-15 13:27:17,978 - INFO - VM 101 CPU Usage: -0.29%
+2025-02-15 13:27:17,981 - INFO - VM 101 CPU is normal.
+2025-02-15 13:27:17,982 - INFO - Scaling check complete.
+2025-02-15 13:29:10,367 - INFO - Starting VM scaling script...
+2025-02-15 13:29:10,441 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 13:29:10,442 - INFO - VM 100 CPU is normal.
+2025-02-15 13:29:10,446 - INFO - VM 101 CPU Usage: 0.08%
+2025-02-15 13:29:10,447 - INFO - VM 101 CPU is normal.
+2025-02-15 13:29:10,447 - INFO - Scaling check complete.
+2025-02-15 13:30:51,645 - INFO - Starting VM scaling script...
+2025-02-15 13:30:51,714 - INFO - VM 100 CPU Usage: 0.39%
+2025-02-15 13:30:51,714 - INFO - VM 100 CPU is normal.
+2025-02-15 13:30:51,718 - INFO - VM 101 CPU Usage: 0.08%
+2025-02-15 13:30:51,719 - INFO - VM 101 CPU is normal.
+2025-02-15 13:30:51,719 - INFO - Scaling check complete.
+2025-02-15 13:34:24,719 - INFO - Starting VM scaling script...
+2025-02-15 13:35:56,847 - INFO - Starting VM scaling script...
+2025-02-15 13:35:56,929 - INFO - VM 100 CPU Usage: 0.39%
+2025-02-15 13:35:56,931 - INFO - VM 100 CPU is normal.
+2025-02-15 13:35:56,936 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 13:35:56,937 - INFO - VM 101 CPU is normal.
+2025-02-15 13:35:56,938 - INFO - Scaling check complete.
+2025-02-15 13:38:29,208 - INFO - Starting VM scaling script...
+2025-02-15 13:38:29,285 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 13:38:29,285 - INFO - VM 100 CPU is normal.
+2025-02-15 13:38:29,292 - INFO - VM 101 CPU Usage: 0.41%
+2025-02-15 13:38:29,293 - INFO - VM 101 CPU is normal.
+2025-02-15 13:38:29,294 - INFO - Scaling check complete.
+2025-02-15 13:43:26,387 - INFO - Starting VM scaling script...
+2025-02-15 13:43:26,467 - INFO - VM 100 CPU Usage: 0.39%
+2025-02-15 13:43:26,472 - INFO - VM 100 CPU is normal.
+2025-02-15 13:43:26,484 - INFO - VM 101 CPU Usage: 0.44%
+2025-02-15 13:43:26,488 - INFO - VM 101 CPU is normal.
+2025-02-15 13:43:26,488 - INFO - Scaling check complete.
+2025-02-15 13:44:46,144 - INFO - Starting VM scaling script...
+2025-02-15 13:44:46,230 - INFO - VM 100 CPU Usage: 0.36%
+2025-02-15 13:44:46,230 - INFO - VM 100 CPU is normal.
+2025-02-15 13:44:46,235 - INFO - VM 101 CPU Usage: 0.12%
+2025-02-15 13:44:46,235 - INFO - VM 101 CPU is normal.
+2025-02-15 13:44:46,237 - INFO - Scaling check complete.
+2025-02-15 13:45:14,573 - INFO - Starting VM scaling script...
+2025-02-15 13:45:14,653 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 13:45:14,654 - INFO - VM 100 CPU is normal.
+2025-02-15 13:45:14,658 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 13:45:14,659 - INFO - VM 101 CPU is normal.
+2025-02-15 13:45:14,659 - INFO - Scaling check complete.
+2025-02-15 13:47:42,702 - INFO - Starting VM scaling script...
+2025-02-15 13:47:42,776 - INFO - VM 100 CPU Usage: 0.37%
+2025-02-15 13:47:42,777 - INFO - VM 100 CPU is normal.
+2025-02-15 13:47:42,781 - INFO - VM 101 CPU Usage: 0.05%
+2025-02-15 13:47:42,782 - INFO - VM 101 CPU is normal.
+2025-02-15 13:47:42,783 - INFO - Scaling check complete.
+2025-02-15 13:48:24,672 - INFO - Starting VM scaling script...
+2025-02-15 13:48:24,750 - INFO - VM 100 CPU Usage: 0.38%
+2025-02-15 13:48:24,752 - INFO - VM 100 CPU is normal.
+2025-02-15 13:48:24,756 - INFO - VM 101 CPU Usage: 0.09%
+2025-02-15 13:48:24,757 - INFO - VM 101 CPU is normal.
+2025-02-15 13:48:24,757 - INFO - Scaling check complete.
+2025-02-15 13:54:41,212 - INFO - Starting VM scaling script...
+2025-02-15 13:54:41,297 - INFO - VM 100 CPU Usage: 0.46%
+2025-02-15 13:54:41,297 - INFO - VM 100 CPU is normal.
+2025-02-15 13:54:41,302 - INFO - VM 101 CPU Usage: 0.07%
+2025-02-15 13:54:41,303 - INFO - VM 101 CPU is normal.
+2025-02-15 13:54:41,303 - INFO - Scaling check complete.
+2025-03-05 06:52:21,222 - INFO - Starting VM scaling script...
+2025-03-05 06:52:24,430 - ERROR - Failed to fetch CPU usage for VM 192.168.0.95: HTTPConnectionPool(host='192.168.0.81', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.95%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3b5e33d210>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-03-05 06:52:24,431 - ERROR - Failed to fetch CPU usage for VM 100
+2025-03-05 06:52:27,501 - ERROR - Failed to fetch CPU usage for VM 192.168.0.96: HTTPConnectionPool(host='192.168.0.81', port=9090): Max retries exceeded with url: /api/v1/query?query=100+-+%28avg+by%28instance%29+%28rate%28node_cpu_seconds_total%7Bmode%3D%22idle%22%2C+instance%3D%22192.168.0.96%3A9100%22%7D%5B1m%5D%29%29+%2A+100%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3b5ed2ed10>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-03-05 06:52:27,502 - ERROR - Failed to fetch CPU usage for VM 101
+2025-03-05 06:52:27,503 - INFO - Scaling check complete.
+2025-03-05 06:54:41,085 - INFO - Starting VM scaling script...
+2025-03-05 06:54:44,900 - INFO - VM 100 CPU Usage: 0.69%
+2025-03-05 06:54:44,901 - INFO - VM 100 CPU is normal.
+2025-03-05 06:54:44,907 - INFO - VM 101 CPU Usage: 0.13%
+2025-03-05 06:54:44,908 - INFO - VM 101 CPU is normal.
+2025-03-05 06:54:44,908 - INFO - Scaling check complete.
+2025-03-05 06:57:13,667 - INFO - Starting VM scaling script...
+2025-03-05 06:57:14,839 - INFO - VM 100 CPU Usage: 0.68%
+2025-03-05 06:57:14,840 - INFO - VM 100 CPU is normal.
+2025-03-05 06:57:14,844 - INFO - VM 101 CPU Usage: 0.14%
+2025-03-05 06:57:14,844 - INFO - VM 101 CPU is normal.
+2025-03-05 06:57:14,845 - INFO - Scaling check complete.

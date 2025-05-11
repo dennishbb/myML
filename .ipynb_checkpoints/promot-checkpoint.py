@@ -17,7 +17,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 PROXMOX_HOST = "192.168.0.100"  # Change to your Proxmox node IP
 PROXMOX_USER = "root@pam"
 PROXMOX_PASSWORD = "password"
-PROMETHEUS_URL = "http://192.168.0.81:9090/api/v1/query"
+PROMETHEUS_URL = "http://192.168.0.34:9090/api/v1/query"
 
 # VM Details
 VMS = {
